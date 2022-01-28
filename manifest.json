@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Dad Jokes Generator",
+  "description": "Get random dad jokes from the internet and send them to your friends.",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "pepe.png"
+  },
+  "icons": {
+    "150": "pepe.png"
+  },
+  "permissions": ["activeTab"]
+}

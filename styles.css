@@ -1,0 +1,71 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --dominant: #0044ff44;
+  --gradient: linear-gradient(to right, #7028e4 0%, #e5b2ca 100%);
+  --font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p#jokeDisplayer {
+  display: flex;
+  margin: auto 0.625rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.625rem;
+  transition: all 200ms ease-in;
+  background-color: var(--dominant);
+  cursor: pointer;
+}
+
+p#jokeDisplayer.copied {
+  background-color: whitesmoke;
+  color: whitesmoke;
+}
+
+p#jokeDisplayer.copied::before {
+  content: "Copied!";
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+
+button#generateJoke {
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  margin-bottom: 0.625rem;
+  background-image: var(--gradient);
+  font-family: var(--font);
+}
+
+button#generateJoke:hover {
+  transform: translateY(-1.2px);
+}
+
+button#generateJoke:active {
+  transform: translateY(0);
+}
